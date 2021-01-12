@@ -5,11 +5,11 @@
 
 // BONUS
 $('.header-right > a').hover(function() {
-    $('.header-right ul').css('display', 'block');
-    $('.header-right > a').css('display', 'none');
+    $('.header-right ul').show();
+    $('.header-right > a').hide();
 });
 
 $('.header-right').mouseleave(function() {
-  $('.header-right ul').css('display', 'none');
-  $('.header-right > a').css('display', 'block');
+  $('.header-right ul').hide();
+  $('.header-right > a').show();
 });
