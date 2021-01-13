@@ -1,15 +1,18 @@
-// $('.fa-bars').click(function() {
-//   $('.header-right ul').css('display', 'block');
-//   $(this).css('display', 'none');
-// });
-
-// BONUS
-$('.header-right > a').hover(function() {
-    $('.header-right ul').show();
-    $('.header-right > a').hide();
+$('.header-right > a').click(function() {
+  $('.hamburger-menu').addClass('active');
 });
 
-$('.header-right').mouseleave(function() {
-  $('.header-right ul').hide();
-  $('.header-right > a').show();
+$('a.close').click(function() {
+  $('.hamburger-menu').removeClass('active');
+});
+
+// BONUS
+$('button').hover(function() {
+  $(this).css('color', 'red');
+}, function() {
+  $(this).css('color', 'black');
+});
+$('button').click(function() {
+  $(this).css('color', 'green');
+  $(this).text('Hai cliccato');
 });
